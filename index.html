@@ -12,9 +12,9 @@
 <body>
 
 <header id="header">
-  <div class="logo">
+  <a class="logo" href="index.html">
     <img src="assets/logo.png" alt="Charod">
-  </div>
+  </a>
   <nav>
     <a href="proyectos.html">Proyectos</a>
     <a href="index.html#estudio">Estudio</a>
@@ -82,60 +82,96 @@
     <a href="proyectos.html" class="btn-ghost">Ver todo el portfolio</a>
   </div>
 
-  <div class="project-row reveal">
-    <a class="project-visual" href="proyecto-casa-meridiano.html" style="background:#EFEDE6;">
-      <svg viewBox="0 0 200 240"><g fill="none" stroke="#9CA37D" stroke-width="1.4">
-        <rect x="20" y="40" width="160" height="180"/>
-        <line x1="20" y1="100" x2="180" y2="100"/>
-        <line x1="20" y1="160" x2="180" y2="160"/>
-        <line x1="70" y1="40" x2="70" y2="220"/>
-        <line x1="130" y1="40" x2="130" y2="220"/>
-        <polyline points="10,40 100,8 190,40"/>
-      </g></svg>
-    </a>
-    <div class="project-info">
-      <span class="mono">Vivienda — Nordelta</span>
-      <h3><a href="proyecto-casa-meridiano.html">Casa Meridiano</a></h3>
-      <p>Rediseño integral del interior de una vivienda existente, organizado en torno a un eje que conecta el estar, el estudio y el jardín en una sola línea de vista.</p>
-      <div class="meta"><span>320 m²</span><span>2024</span><span>Diseño + Desarrollo</span></div>
-    </div>
-  </div>
+  <div class="projects-carousel reveal" data-carousel>
+    <div class="carousel-frame proj-frame">
+      <div class="carousel-track">
 
-  <div class="project-row flip reveal">
-    <a class="project-visual" href="proyecto-depto-lino.html" style="background:#EAF1F4;">
-      <svg viewBox="0 0 200 240"><g fill="none" stroke="#78A4BD" stroke-width="1.4">
-        <rect x="20" y="30" width="160" height="190"/>
-        <rect x="45" y="60" width="60" height="40"/>
-        <rect x="120" y="60" width="45" height="40"/>
-        <circle cx="80" cy="170" r="18"/>
-        <line x1="120" y1="150" x2="165" y2="150"/>
-        <line x1="120" y1="170" x2="165" y2="170"/>
-      </g></svg>
-    </a>
-    <div class="project-info">
-      <span class="mono">Interiorismo — Palermo</span>
-      <h3><a href="proyecto-depto-lino.html">Departamento Lino</a></h3>
-      <p>Renovación integral de un piso de los años 40: se conservó la carpintería original y se rediseñó la circulación completa.</p>
-      <div class="meta"><span>140 m²</span><span>2023</span><span>Solo diseño</span></div>
-    </div>
-  </div>
+        <a class="carousel-slide project-slide" href="proyecto-casa-meridiano.html">
+          <div class="project-slide-media" style="background:#EFEDE6;">
+            <svg viewBox="0 0 200 240"><g fill="none" stroke="#9CA37D" stroke-width="1.4">
+              <rect x="20" y="40" width="160" height="180"/>
+              <line x1="20" y1="100" x2="180" y2="100"/>
+              <line x1="20" y1="160" x2="180" y2="160"/>
+              <line x1="70" y1="40" x2="70" y2="220"/>
+              <line x1="130" y1="40" x2="130" y2="220"/>
+              <polyline points="10,40 100,8 190,40"/>
+            </g></svg>
+          </div>
+          <div class="project-slide-info">
+            <span class="mono">Vivienda — Nordelta</span>
+            <h3>Casa Meridiano</h3>
+            <p>Rediseño integral del interior de una vivienda existente, organizado en torno a un eje que conecta el estar, el estudio y el jardín en una sola línea de vista.</p>
+            <div class="meta"><span>320 m²</span><span>2024</span><span>Diseño + Desarrollo</span></div>
+            <span class="btn-ghost">Ver proyecto</span>
+          </div>
+        </a>
 
-  <div class="project-row reveal">
-    <div class="project-visual" style="background:#EFEDE6;">
-      <svg viewBox="0 0 200 240"><g fill="none" stroke="#9CA37D" stroke-width="1.4">
-        <rect x="15" y="70" width="170" height="150"/>
-        <line x1="15" y1="130" x2="185" y2="130"/>
-        <line x1="60" y1="70" x2="60" y2="220"/>
-        <line x1="140" y1="70" x2="140" y2="220"/>
-        <polyline points="15,70 100,15 185,70"/>
-        <rect x="90" y="170" width="30" height="50"/>
-      </g></svg>
+        <a class="carousel-slide project-slide" href="proyecto-depto-lino.html">
+          <div class="project-slide-media" style="background:#EAF1F4;">
+            <svg viewBox="0 0 200 240"><g fill="none" stroke="#78A4BD" stroke-width="1.4">
+              <rect x="20" y="30" width="160" height="190"/>
+              <rect x="45" y="60" width="60" height="40"/>
+              <rect x="120" y="60" width="45" height="40"/>
+              <circle cx="80" cy="170" r="18"/>
+              <line x1="120" y1="150" x2="165" y2="150"/>
+              <line x1="120" y1="170" x2="165" y2="170"/>
+            </g></svg>
+          </div>
+          <div class="project-slide-info">
+            <span class="mono">Interiorismo — Palermo</span>
+            <h3>Departamento Lino</h3>
+            <p>Renovación integral de un piso de los años 40: se conservó la carpintería original y se rediseñó la circulación completa.</p>
+            <div class="meta"><span>140 m²</span><span>2023</span><span>Solo diseño</span></div>
+            <span class="btn-ghost">Ver proyecto</span>
+          </div>
+        </a>
+
+        <a class="carousel-slide project-slide" href="proyectos.html">
+          <div class="project-slide-media" style="background:#EFEDE6;">
+            <svg viewBox="0 0 200 240"><g fill="none" stroke="#9CA37D" stroke-width="1.4">
+              <rect x="15" y="70" width="170" height="150"/>
+              <line x1="15" y1="130" x2="185" y2="130"/>
+              <line x1="60" y1="70" x2="60" y2="220"/>
+              <line x1="140" y1="70" x2="140" y2="220"/>
+              <polyline points="15,70 100,15 185,70"/>
+              <rect x="90" y="170" width="30" height="50"/>
+            </g></svg>
+          </div>
+          <div class="project-slide-info">
+            <span class="mono">Oficinas — Estudio boutique</span>
+            <h3>Oficinas Estero</h3>
+            <p>Un espacio de trabajo pensado como sucesión de ambientes domésticos, sin perder la eficiencia de una oficina.</p>
+            <div class="meta"><span>210 m²</span><span>2022</span><span>Diseño + Desarrollo</span></div>
+            <span class="btn-ghost">Ver proyecto</span>
+          </div>
+        </a>
+
+      </div>
+      <div class="carousel-nav prev">‹</div>
+      <div class="carousel-nav next">›</div>
+      <div class="carousel-counter"></div>
     </div>
-    <div class="project-info">
-      <span class="mono">Oficinas — Estudio boutique</span>
-      <h3>Oficinas Estero</h3>
-      <p>Un espacio de trabajo pensado como sucesión de ambientes domésticos, sin perder la eficiencia de una oficina.</p>
-      <div class="meta"><span>210 m²</span><span>2022</span><span>Diseño + Desarrollo</span></div>
+    <div class="carousel-dots"></div>
+  </div>
+</section>
+
+<section class="team" id="equipo">
+  <div class="wrap">
+    <span class="section-label reveal">Equipo</span>
+    <h2 class="reveal">Dos arquitectas, un mismo estudio.</h2>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--sage);">NA</div>
+        <h3>Nombre Apellido</h3>
+        <span class="mono">Arquitecta · Cofundadora</span>
+        <p>Escribí acá la bio real — trayectoria, especialidad, qué la trajo a Charod.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:var(--blue-deep);">NA</div>
+        <h3>Nombre Apellido</h3>
+        <span class="mono">Arquitecta · Cofundadora</span>
+        <p>Escribí acá la bio real — trayectoria, especialidad, qué la trajo a Charod.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -177,16 +213,16 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="logo footer-logo" style="margin-bottom:16px;">
+        <a class="logo footer-logo" href="index.html" style="margin-bottom:16px;">
           <img src="assets/logo.png" alt="Charod">
-        </div>
+        </a>
         <p style="max-width:240px;opacity:0.75;">Estudio de diseño de interiores. Un espacio, una sola mirada.</p>
       </div>
       <div>
         <h4>Estudio</h4>
         <a href="index.html#estudio">Sobre nosotros</a>
         <a href="index.html#proceso">Proceso</a>
-        <a href="#">Equipo</a>
+        <a href="#equipo">Equipo</a>
       </div>
       <div>
         <h4>Proyectos</h4>

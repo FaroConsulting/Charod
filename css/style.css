@@ -221,6 +221,42 @@ nav a.active::after{width:100%;}
 .filter-tab:hover{border-color:var(--sage-dark);}
 .filter-tab.active{background:var(--sage-dark);border-color:var(--sage-dark);color:#fff;}
 
+/* ---------- projects carousel (home) ---------- */
+.projects-carousel{max-width:1180px;margin:0 auto;padding:0 40px;}
+.proj-frame{
+  aspect-ratio:auto;background:transparent;height:460px;
+}
+.project-slide{
+  display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;
+  color:inherit;
+}
+.project-slide-media{
+  aspect-ratio:4/3.4;border-radius:3px;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.project-slide-media svg{width:65%;}
+.project-slide-info .mono{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-deep);}
+.project-slide-info h3{font-size:28px;margin:14px 0 14px;font-weight:400;}
+.project-slide-info p{color:var(--ink);font-size:15px;max-width:420px;}
+.project-slide-info .meta{
+  display:flex;gap:24px;margin:22px 0;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink);opacity:0.7;
+}
+.project-slide-info .btn-ghost{display:inline-block;}
+
+/* ---------- team ---------- */
+.team{padding:60px 0 140px;}
+.team h2{font-size:clamp(28px,3.2vw,40px);max-width:520px;margin-bottom:56px;}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:60px;}
+.team-avatar{
+  width:76px;height:76px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:'Jost',sans-serif;font-size:22px;margin-bottom:22px;
+}
+.team-card h3{font-size:22px;font-weight:400;margin-bottom:6px;}
+.team-card .mono{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue-deep);}
+.team-card p{margin-top:14px;font-size:15px;color:var(--ink);max-width:400px;}
+
 /* ---------- project grid (Proyectos page) ---------- */
 .project-grid{
   display:grid;grid-template-columns:repeat(2,1fr);gap:50px 40px;
@@ -228,7 +264,7 @@ nav a.active::after{width:100%;}
 }
 .grid-card{display:block;}
 .grid-card .thumb{
-  aspect-ratio:4/5;border-radius:3px;overflow:hidden;position:relative;background:var(--stone);
+  aspect-ratio:4/3.3;border-radius:3px;overflow:hidden;position:relative;background:var(--stone);
 }
 .grid-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
 .grid-card:hover .thumb img{transform:scale(1.04);}
@@ -358,4 +394,7 @@ footer{background:var(--stone);padding:80px 0 30px;}
   .hero-mark{opacity:0.05;width:50vw;}
   .project-grid{grid-template-columns:1fr;}
   .detail-meta{gap:24px;}
+  .project-slide{grid-template-columns:1fr;gap:24px;}
+  .proj-frame{height:auto;overflow:visible;padding:6px;}
+  .team-grid{grid-template-columns:1fr;gap:40px;}
 }
