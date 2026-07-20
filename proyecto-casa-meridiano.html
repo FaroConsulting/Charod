@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Meridiano — Charod</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Charod">
+  </div>
+  <nav>
+    <a href="proyectos.html" class="active">Proyectos</a>
+    <a href="index.html#estudio">Estudio</a>
+    <a href="index.html#proceso">Proceso</a>
+    <a href="index.html#contacto" class="nav-cta">Hablemos</a>
+  </nav>
+</header>
+
+<div class="page-header" style="padding-bottom:20px;">
+  <a href="proyectos.html" class="btn-ghost mono" style="font-size:12px;">← Volver a Proyectos</a>
+</div>
+
+<div class="detail-head">
+  <span class="mono">Vivienda — Nordelta · Diseño + Desarrollo</span>
+  <h1>Casa Meridiano</h1>
+  <p>Rediseño integral del interior de una vivienda existente, organizado en torno a un eje que conecta el estar, el estudio y el jardín en una sola línea de vista. Acompañamos el proyecto desde el concepto hasta la última terminación en obra.</p>
+  <div class="detail-meta">
+    <div><div class="k">Superficie</div><div class="v">320 m²</div></div>
+    <div><div class="k">Año</div><div class="v">2024</div></div>
+    <div><div class="k">Ubicación</div><div class="v">Nordelta, Buenos Aires</div></div>
+    <div><div class="k">Servicio</div><div class="v">Diseño + Desarrollo</div></div>
+  </div>
+</div>
+
+<!--
+  CARRETE DE FOTOS/VIDEOS
+  Cada foto o video es un bloque .carousel-slide acá abajo. Para agregar uno:
+    - Foto:  <div class="carousel-slide"><img src="assets/projects/casa-meridiano/NOMBRE.jpg" alt="..."></div>
+    - Video: <div class="carousel-slide">
+               <video controls poster="assets/projects/casa-meridiano/POSTER.jpg">
+                 <source src="assets/projects/casa-meridiano/NOMBRE.mp4" type="video/mp4">
+               </video>
+             </div>
+  El carrusel (flechas, puntos, contador) se arma solo con la cantidad de slides que haya.
+  Subí los archivos a assets/projects/casa-meridiano/ antes de referenciarlos acá.
+-->
+<div class="carousel reveal" data-carousel>
+  <div class="carousel-frame">
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="assets/projects/casa-meridiano/casa_1.jpg" alt="Casa Meridiano - foto 1"></div>
+      <div class="carousel-slide"><img src="assets/projects/casa-meridiano/casa_2.jpg" alt="Casa Meridiano - foto 2"></div>
+      <div class="carousel-slide"><img src="assets/projects/casa-meridiano/casa_3.jpg" alt="Casa Meridiano - foto 3"></div>
+      <div class="carousel-slide">
+        <video controls poster="assets/projects/casa-meridiano/casa_4_poster.jpg">
+          <source src="assets/projects/casa-meridiano/casa_4_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="carousel-nav prev">‹</div>
+    <div class="carousel-nav next">›</div>
+    <div class="carousel-counter"></div>
+  </div>
+  <div class="carousel-dots"></div>
+</div>
+
+<section class="philosophy" style="padding:0 0 140px;">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-label">El proyecto</span>
+      <h2>Un recorrido, no una serie de ambientes.</h2>
+    </div>
+    <div class="philosophy-text reveal">
+      <p>La casa original tenía los ambientes sociales fragmentados en tres alas sin conexión visual. Reorganizamos la planta baja en torno a un eje que atraviesa el living, el estudio y el jardín, de modo que desde la cocina se ve el fondo de la casa entera.</p>
+      <p>El desarrollo incluyó la dirección de obra completa: demolición de tabiques, nueva carpintería, y el mobiliario a medida del living y el estudio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <span class="section-label reveal">¿Un proyecto parecido?</span>
+    <h2 class="reveal">Contanos qué espacio<br>tenés en mente.</h2>
+    <a href="index.html#contacto" class="btn-primary reveal">Escribinos</a>
+  </div>
+</section>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo footer-logo" style="margin-bottom:16px;">
+          <img src="assets/logo.png" alt="Charod">
+        </div>
+        <p style="max-width:240px;opacity:0.75;">Estudio de diseño de interiores. Un espacio, una sola mirada.</p>
+      </div>
+      <div>
+        <h4>Estudio</h4>
+        <a href="index.html#estudio">Sobre nosotros</a>
+        <a href="index.html#proceso">Proceso</a>
+        <a href="#">Equipo</a>
+      </div>
+      <div>
+        <h4>Proyectos</h4>
+        <a href="proyectos.html">Viviendas</a>
+        <a href="proyectos.html">Oficinas</a>
+        <a href="proyectos.html">Locales</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:hola@charod.com">hola@charod.com</a>
+        <a href="tel:+541100000000">+54 11 0000 0000</a>
+        <p>Buenos Aires, Argentina</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Charod — Diseño de Interiores</span>
+      <span>Concepto de marca y sitio</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

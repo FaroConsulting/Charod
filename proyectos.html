@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos — Charod</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="logo">
+    <img src="assets/logo.png" alt="Charod">
+  </div>
+  <nav>
+    <a href="proyectos.html" class="active">Proyectos</a>
+    <a href="index.html#estudio">Estudio</a>
+    <a href="index.html#proceso">Proceso</a>
+    <a href="index.html#contacto" class="nav-cta">Hablemos</a>
+  </nav>
+</header>
+
+<div class="page-header">
+  <span class="eyebrow reveal">Portfolio</span>
+  <h1 class="reveal">Proyectos</h1>
+  <p class="sub reveal">Casas, oficinas y locales. Algunos los acompañamos solo en el diseño; en otros llevamos también el desarrollo y la ejecución completa en obra.</p>
+</div>
+
+<div class="filter-bar reveal">
+  <button class="filter-tab active" data-filter="todos">Todos</button>
+  <button class="filter-tab" data-filter="diseno">Solo diseño</button>
+  <button class="filter-tab" data-filter="diseno-desarrollo">Diseño + Desarrollo</button>
+</div>
+
+<div class="project-grid">
+
+  <a class="grid-card reveal" href="proyecto-casa-meridiano.html" data-category="diseno-desarrollo">
+    <div class="thumb">
+      <span class="tag">Diseño + Desarrollo</span>
+      <img src="assets/projects/casa-meridiano/casa_1.jpg" alt="Casa Meridiano">
+    </div>
+    <div class="info">
+      <h3>Casa Meridiano</h3>
+      <span class="meta">2024 · 320 m²</span>
+    </div>
+  </a>
+
+  <a class="grid-card reveal" href="proyecto-depto-lino.html" data-category="diseno">
+    <div class="thumb">
+      <span class="tag">Solo diseño</span>
+      <img src="assets/projects/depto-lino/lino_1.jpg" alt="Departamento Lino">
+    </div>
+    <div class="info">
+      <h3>Departamento Lino</h3>
+      <span class="meta">2023 · 140 m²</span>
+    </div>
+  </a>
+
+  <a class="grid-card reveal" href="#" data-category="diseno-desarrollo">
+    <div class="thumb" style="display:flex;align-items:center;justify-content:center;">
+      <svg viewBox="0 0 200 240" width="60%"><g fill="none" stroke="#9CA37D" stroke-width="1.4">
+        <rect x="15" y="70" width="170" height="150"/>
+        <line x1="15" y1="130" x2="185" y2="130"/>
+        <line x1="60" y1="70" x2="60" y2="220"/>
+        <line x1="140" y1="70" x2="140" y2="220"/>
+        <polyline points="15,70 100,15 185,70"/>
+        <rect x="90" y="170" width="30" height="50"/>
+      </g></svg>
+      <span class="tag">Diseño + Desarrollo</span>
+    </div>
+    <div class="info">
+      <h3>Oficinas Estero</h3>
+      <span class="meta">2022 · 210 m²</span>
+    </div>
+  </a>
+
+</div>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo footer-logo" style="margin-bottom:16px;">
+          <img src="assets/logo.png" alt="Charod">
+        </div>
+        <p style="max-width:240px;opacity:0.75;">Estudio de diseño de interiores. Un espacio, una sola mirada.</p>
+      </div>
+      <div>
+        <h4>Estudio</h4>
+        <a href="index.html#estudio">Sobre nosotros</a>
+        <a href="index.html#proceso">Proceso</a>
+        <a href="#">Equipo</a>
+      </div>
+      <div>
+        <h4>Proyectos</h4>
+        <a href="proyectos.html">Viviendas</a>
+        <a href="proyectos.html">Oficinas</a>
+        <a href="proyectos.html">Locales</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:hola@charod.com">hola@charod.com</a>
+        <a href="tel:+541100000000">+54 11 0000 0000</a>
+        <p>Buenos Aires, Argentina</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Charod — Diseño de Interiores</span>
+      <span>Concepto de marca y sitio</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
