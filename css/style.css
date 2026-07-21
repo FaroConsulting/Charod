@@ -233,8 +233,11 @@ nav a.active::after{width:100%;}
 .project-slide-media{
   aspect-ratio:4/3.4;border-radius:3px;
   display:flex;align-items:center;justify-content:center;overflow:hidden;
+  min-width:0;
 }
+.project-slide-media img{width:100%;height:100%;object-fit:cover;display:block;}
 .project-slide-media svg{width:65%;}
+.project-slide-info{min-width:0;}
 .project-slide-info .mono{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-deep);}
 .project-slide-info h3{font-size:28px;margin:14px 0 14px;font-weight:400;}
 .project-slide-info p{color:var(--ink);font-size:15px;max-width:420px;}
@@ -246,16 +249,19 @@ nav a.active::after{width:100%;}
 
 /* ---------- team ---------- */
 .team{padding:60px 0 140px;}
-.team h2{font-size:clamp(28px,3.2vw,40px);max-width:520px;margin-bottom:56px;}
-.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:60px;}
-.team-avatar{
-  width:76px;height:76px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  color:#fff;font-family:'Jost',sans-serif;font-size:22px;margin-bottom:22px;
+.team h2{font-size:clamp(28px,3.2vw,40px);max-width:520px;margin-bottom:60px;}
+.team-row{
+  display:grid;grid-template-columns:0.8fr 1.2fr;align-items:center;gap:70px;
+  max-width:1180px;margin:0 auto 90px;padding:0 40px;
 }
-.team-card h3{font-size:22px;font-weight:400;margin-bottom:6px;}
-.team-card .mono{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue-deep);}
-.team-card p{margin-top:14px;font-size:15px;color:var(--ink);max-width:400px;}
+.team-row.flip{direction:rtl;}
+.team-row.flip > *{direction:ltr;}
+.team-photo{aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--stone);min-width:0;}
+.team-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.team-bio{min-width:0;}
+.team-bio .mono{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-deep);}
+.team-bio h3{font-size:26px;margin:14px 0 16px;font-weight:400;}
+.team-bio p{font-size:15px;color:var(--ink);max-width:440px;}
 
 /* ---------- project grid (Proyectos page) ---------- */
 .project-grid{
@@ -397,4 +403,5 @@ footer{background:var(--stone);padding:80px 0 30px;}
   .project-slide{grid-template-columns:1fr;gap:24px;}
   .proj-frame{height:auto;overflow:visible;padding:6px;}
   .team-grid{grid-template-columns:1fr;gap:40px;}
+  .team-row, .team-row.flip{grid-template-columns:1fr;direction:ltr;gap:24px;margin-bottom:60px;}
 }
